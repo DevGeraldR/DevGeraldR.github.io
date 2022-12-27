@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { SiUpwork } from "react-icons/si";
-import profile from "../assets/profile_hero.jpg";
+import profile from "../assets/profile-hero.jpg";
 
 function Hero() {
   return (
@@ -9,7 +9,11 @@ function Hero() {
       <h2 className="text-5xl py-2 text-blue-500 font-medium md:text-6xl">
         Gerald Romero
       </h2>
-      <h3 className="text-2xl py-2 text-white md:text-3xl">Web Developer</h3>
+      <h3 className="text-2xl py-2 text-white md:text-3xl">Developer</h3>
+      <p className="text-md py-5 leading-8 text-gray-300 max-w-xl mx-auto md:text-xl">
+        Freelancer providing services for programming. <br />
+        Message me down below!
+      </p>
       <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
         <a
           href="https://www.facebook.com/gerald.romero.0022/"
