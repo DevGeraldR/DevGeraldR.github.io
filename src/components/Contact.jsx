@@ -2,6 +2,7 @@ import { doc, setDoc } from "firebase/firestore";
 import React, { useState, Fragment } from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 import { Dialog, Transition } from "@headlessui/react";
 import { SiUpwork } from "react-icons/si";
 import { db } from "./firebase";
@@ -77,6 +78,7 @@ function Contact() {
                   <label className="leading-7 text-sm">Message</label>
                   <textarea
                     id="message"
+                    required
                     name="message"
                     value={message}
                     onChange={(e) => {
@@ -138,10 +140,16 @@ function Contact() {
               </p>
               <div className="text-3xl flex justify-center gap-5 text-gray-600">
                 <a
-                  href="https://www.facebook.com/gerald.romero.0022/"
+                  href="https://github.com/DevGeraldR"
                   className="cursor-pointer hover:text-blue-500"
                 >
-                  <AiFillFacebook />
+                  <BsGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gerald-romero-732424279/"
+                  className="cursor-pointer hover:text-blue-500"
+                >
+                  <FaLinkedin />
                 </a>
                 <a
                   href="https://www.upwork.com/freelancers/~01e42b59d829d990a2"
@@ -150,10 +158,10 @@ function Contact() {
                   <SiUpwork />
                 </a>
                 <a
-                  href="https://github.com/DevGeraldR"
+                  href="https://www.facebook.com/gerald.romero.0022/"
                   className="cursor-pointer hover:text-blue-500"
                 >
-                  <BsGithub />
+                  <AiFillFacebook />
                 </a>
               </div>
             </div>

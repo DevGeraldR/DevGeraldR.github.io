@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import { SiUpwork } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import profile from "../assets/profile-hero.jpg";
 
@@ -17,10 +18,16 @@ function Hero() {
       </p>
       <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
         <a
-          href="https://www.facebook.com/gerald.romero.0022/"
+          href="https://github.com/DevGeraldR"
           className="cursor-pointer hover:text-blue-500"
         >
-          <AiFillFacebook />
+          <BsGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gerald-romero-732424279/"
+          className="cursor-pointer hover:text-blue-500"
+        >
+          <FaLinkedin />
         </a>
         <a
           href="https://www.upwork.com/freelancers/~01e42b59d829d990a2"
@@ -29,10 +36,10 @@ function Hero() {
           <SiUpwork />
         </a>
         <a
-          href="https://github.com/DevGeraldR"
+          href="https://www.facebook.com/gerald.romero.0022/"
           className="cursor-pointer hover:text-blue-500"
         >
-          <BsGithub />
+          <AiFillFacebook />
         </a>
       </div>
       <div className="mx-auto rounded-full w-80 h-80 overflow-hidden mt-5 md:h-96 md:w-96">
