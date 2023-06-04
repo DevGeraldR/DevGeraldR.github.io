@@ -1,6 +1,7 @@
 import { doc, setDoc } from "firebase/firestore";
 import React, { useState, Fragment } from "react";
 import { AiFillFacebook } from "react-icons/ai";
+import { BsGithub } from "react-icons/bs";
 import { Dialog, Transition } from "@headlessui/react";
 import { SiUpwork } from "react-icons/si";
 import { db } from "./firebase";
@@ -147,6 +148,12 @@ function Contact() {
                   className="cursor-pointer hover:text-blue-500"
                 >
                   <SiUpwork />
+                </a>
+                <a
+                  href="https://github.com/DevGeraldR"
+                  className="cursor-pointer hover:text-blue-500"
+                >
+                  <BsGithub />
                 </a>
               </div>
             </div>
