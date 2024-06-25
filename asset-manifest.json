@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5fc6689a.css",
-    "main.js": "/static/js/main.ece7eca9.js",
+    "main.js": "/static/js/main.27a2058c.js",
     "static/media/trap-game.png": "/static/media/trap-game.16996a9b3cc68762fe6c.png",
     "static/media/chatnb.png": "/static/media/chatnb.e4bf812f38db2a4854c3.png",
     "static/media/nearby-app.png": "/static/media/nearby-app.03db8075e1f295de4ee1.png",
@@ -12,10 +12,10 @@
     "static/media/nearby-web.png": "/static/media/nearby-web.4ba92edd55f38024bdbf.png",
     "index.html": "/index.html",
     "main.5fc6689a.css.map": "/static/css/main.5fc6689a.css.map",
-    "main.ece7eca9.js.map": "/static/js/main.ece7eca9.js.map"
+    "main.27a2058c.js.map": "/static/js/main.27a2058c.js.map"
   },
   "entrypoints": [
     "static/css/main.5fc6689a.css",
-    "static/js/main.ece7eca9.js"
+    "static/js/main.27a2058c.js"
   ]
 }
