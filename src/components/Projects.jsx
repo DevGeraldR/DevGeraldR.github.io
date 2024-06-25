@@ -1,14 +1,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/nearby-app.png";
-import project2 from "../assets/nearby-web.png";
+import project1 from "../assets/it-scheduler.png";
+import project2 from "../assets/chatnb.png";
 import project3 from "../assets/booking-web.png";
 import project4 from "../assets/trap-game.png";
-import project5 from "../assets/calculator.png";
-import project6 from "../assets/notation-converter.png";
-import project7 from "../assets/word-guessing-game.png";
-import project8 from "../assets/number-guessing-game.png";
-import project9 from "../assets/rock-paper-scissor-game.png";
+import project5 from "../assets/nearby-app.png";
+import project6 from "../assets/nearby-web.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -17,20 +14,18 @@ function Projects() {
   const projects = [
     {
       img: project1,
-      name: "Neaby App",
-      demoLink:
-        "https://expo.dev/accounts/goodman_22/projects/nearby/builds/03d27f0b-16b7-4285-a86c-762d1d40654c",
+      name: "IT Scheduler System",
+      demoLink: "https://it-scheduler-fcf53.firebaseapp.com/",
       description:
-        "A mobile application in react native. This helps find the nearest location.",
-      codeLink: "",
+        "This is an IT scheduler system that we created during our OJT in TaskUS. Login credentials: admin@gmail.com and P@ssw0rd12345!",
     },
     {
       img: project2,
-      name: "Nearby Website",
-      demoLink: "https://devgeraldr.github.io/nearby-web-preview/",
+      name: "ChatNB",
+      demoLink:
+        "https://drive.google.com/file/d/1W6A-7Jux0UcG7usMBxMWFqGdI1AMesb2/view?usp=sharing",
       description:
-        "A website built in react and tailwind. It is use by admin of Nearby app.",
-      codeLink: "",
+        "An AI Chatbot used  to facilitate conversion with an AI Model Notable Batangueño.",
     },
     {
       img: project3,
@@ -38,7 +33,6 @@ function Projects() {
       demoLink: "https://devgeraldr.github.io/booking_website_preview/",
       description:
         "A website built in react and tailwind css. It is use for reservation of a time.",
-      codeLink: "",
     },
     {
       img: project4,
@@ -47,47 +41,21 @@ function Projects() {
         "https://drive.google.com/file/d/13zMcKxqpPVTJYyhw6Gm5DUuGuz7p1GFH/view?usp=sharing",
       description:
         "A game built in c# with Unity. The idea of the game is to avoid traps.",
-      codeLink: "https://github.com/DevGeraldR/trap-game",
     },
     {
       img: project5,
-      name: "Calculator",
-      demoLink: "",
+      name: "Neaby App",
+      demoLink:
+        "https://expo.dev/accounts/goodman_22/projects/nearby/builds/03d27f0b-16b7-4285-a86c-762d1d40654c",
       description:
-        "A calculator desktop app built with Java, Java swing and Java AWT.",
-      codeLink: "https://github.com/DevGeraldR/calculator",
+        "A mobile application in react native. This helps find the nearest location.",
     },
     {
       img: project6,
-      name: "Notation Converter",
-      demoLink: "",
+      name: "Nearby Website",
+      demoLink: "https://devgeraldr.github.io/nearby-web-preview/",
       description:
-        "This is an app that will convert notations. This is made with Java Swing.",
-      codeLink: "https://github.com/DevGeraldR/notation_converter",
-    },
-    {
-      img: project7,
-      name: "Word Guessing Game",
-      demoLink: "",
-      description:
-        "A desktop game built with Java with the use of Java swing and awt.",
-      codeLink: "https://github.com/DevGeraldR/word_guessing_game",
-    },
-    {
-      img: project8,
-      name: "Number Guessing Game",
-      demoLink: "",
-      description:
-        "A game made with java swing. The idea is to guess the number within the specified range.",
-      codeLink: "https://github.com/DevGeraldR/number_guessing_game_java_swing",
-    },
-    {
-      img: project9,
-      name: "Rock, Paper and Scissors Game",
-      demoLink: "",
-      description:
-        "A game made with Java Swing. This is a rock paper scissor game.",
-      codeLink: "https://github.com/DevGeraldR/rock_paper_scissors_game",
+        "A website built in react and tailwind. It is use by admin of Nearby app.",
     },
   ];
 
@@ -137,16 +105,6 @@ function Projects() {
                     className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
                   >
                     Demo
-                  </a>
-                ) : (
-                  ""
-                )}
-                {project_info.codeLink !== "" ? (
-                  <a
-                    href={project_info.codeLink}
-                    className="bg-gradient-to-r from-gray-500 hover:to-gray-500 text-white px-4 py-2 border-none rounded-md"
-                  >
-                    Code
                   </a>
                 ) : (
                   ""

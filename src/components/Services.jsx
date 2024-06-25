@@ -13,11 +13,12 @@ function Services() {
       <div className="lg:flex gap-10">
         <div className="text-center p-10 rounded-xl my-10 bg-white lg:flex-1">
           <h3 className="text-lg font-medium pb-2 ">Web Developer</h3>
-          <p className="text-gray-800 py-1">React</p>
-          <p className="text-gray-800 py-1">Javascript</p>
+          <p className="text-gray-800 py-1">React JS</p>
+          <p className="text-gray-800 py-1">Node JS</p>
           <p className="text-gray-800 py-1">Tailwind CSS</p>
-          <p className="text-gray-800 py-1">Html5</p>
-          <p className="text-gray-800 py-1">CSS</p>
+          <p className="text-gray-800 py-1">Bootstrap</p>
+          <p className="text-gray-800 py-1">MySQL</p>
+          <p className="text-gray-800 py-1">NoSQL</p>
         </div>
         <div className="text-center p-10 rounded-xl my-10 bg-white lg:flex-1">
           <h3 className="text-lg font-medium pb-2 ">Application Developer</h3>
@@ -42,7 +43,6 @@ function Services() {
           <p className="text-gray-800 py-1">C++</p>
           <p className="text-gray-800 py-1">C</p>
           <p className="text-gray-800 py-1">Python</p>
-          <p className="text-gray-800 py-1">MySQL</p>
         </div>
       </div>
     </section>
