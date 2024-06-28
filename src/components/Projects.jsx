@@ -17,7 +17,7 @@ function Projects() {
       name: "IT Scheduler System",
       demoLink: "https://it-scheduler-fcf53.firebaseapp.com/",
       description:
-        "This is an IT scheduler system that we created during our OJT in TaskUS. Login credentials: admin@gmail.com and P@ssw0rd12345!",
+        "This is an IT scheduler system that we created during our OJT in TaskUS. Login credentials: admin@gmail.com and P@ssw0rd12345!.",
     },
     {
       img: project2,
