@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.5fc6689a.css",
-    "main.js": "/static/js/main.27a2058c.js",
+    "main.js": "/static/js/main.321d4089.js",
     "static/media/trap-game.png": "/static/media/trap-game.16996a9b3cc68762fe6c.png",
     "static/media/chatnb.png": "/static/media/chatnb.e4bf812f38db2a4854c3.png",
     "static/media/nearby-app.png": "/static/media/nearby-app.03db8075e1f295de4ee1.png",
     "static/media/profile-hero.jpg": "/static/media/profile-hero.76b99015294a72d01d17.jpg",
     "static/media/it-scheduler.png": "/static/media/it-scheduler.5dc1fd930477d486d037.png",
-    "static/media/gerald-romero-resume.pdf": "/static/media/gerald-romero-resume.9140a2480f9ad97a59be.pdf",
     "static/media/booking-web.png": "/static/media/booking-web.e394aade7aefb0e32560.png",
     "static/media/nearby-web.png": "/static/media/nearby-web.4ba92edd55f38024bdbf.png",
+    "static/media/gerald-romero-resume.pdf": "/static/media/gerald-romero-resume.4e25af761ecdb02a3e31.pdf",
     "index.html": "/index.html",
     "main.5fc6689a.css.map": "/static/css/main.5fc6689a.css.map",
-    "main.27a2058c.js.map": "/static/js/main.27a2058c.js.map"
+    "main.321d4089.js.map": "/static/js/main.321d4089.js.map"
   },
   "entrypoints": [
     "static/css/main.5fc6689a.css",
-    "static/js/main.27a2058c.js"
+    "static/js/main.321d4089.js"
   ]
 }
