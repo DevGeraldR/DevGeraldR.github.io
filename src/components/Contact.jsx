@@ -1,6 +1,5 @@
 import { doc, setDoc } from "firebase/firestore";
 import React, { useState, Fragment } from "react";
-import { AiFillFacebook } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { Dialog, Transition } from "@headlessui/react";
@@ -156,12 +155,6 @@ function Contact() {
                   className="cursor-pointer hover:text-blue-500"
                 >
                   <SiUpwork />
-                </a>
-                <a
-                  href="https://www.facebook.com/gerald.romero.0022/"
-                  className="cursor-pointer hover:text-blue-500"
-                >
-                  <AiFillFacebook />
                 </a>
               </div>
             </div>

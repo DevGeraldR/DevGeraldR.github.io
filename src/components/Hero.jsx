@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillFacebook } from "react-icons/ai";
 import { SiUpwork } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
@@ -34,12 +33,6 @@ function Hero() {
           className="cursor-pointer hover:text-blue-500"
         >
           <SiUpwork />
-        </a>
-        <a
-          href="https://www.facebook.com/gerald.romero.0022/"
-          className="cursor-pointer hover:text-blue-500"
-        >
-          <AiFillFacebook />
         </a>
       </div>
       <div className="mx-auto rounded-full w-80 h-80 overflow-hidden mt-5 md:h-96 md:w-96">
