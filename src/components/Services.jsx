@@ -5,8 +5,8 @@ function Services() {
       <div className="text-center">
         <h3 className="text-3xl py-1 text-white ">Skills & Services</h3>
         <p className="text-md py-1 leading-8 text-gray-800 text-gray-200">
-          I offer services in <span className="text-blue-500"> web app</span>,
-          <span className="text-blue-500"> mobile app</span>, and
+          I offer services in <span className="text-blue-500"> web apps</span>,
+          <span className="text-blue-500"> mobile apps</span>, and
           <span className="text-blue-500"> desktop app </span> development.
         </p>
       </div>

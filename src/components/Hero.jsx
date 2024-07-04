@@ -10,10 +10,12 @@ function Hero() {
       <h2 className="text-5xl py-2 text-blue-500 font-medium md:text-6xl">
         Gerald Romero
       </h2>
-      <h3 className="text-2xl py-2 text-white md:text-3xl">Developer</h3>
+      <h3 className="text-2xl py-2 text-white md:text-3xl">
+        Software Developer
+      </h3>
       <p className="text-md py-5 leading-8 text-gray-300 max-w-xl mx-auto md:text-xl">
-        This is my personal portfolio. If you are interested <br />
-        message me down below!
+        This website is my e-portfolio. If you are interested <br />
+        message me below!
       </p>
       <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
         <a

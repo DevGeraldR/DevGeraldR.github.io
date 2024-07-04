@@ -205,8 +205,8 @@ function Contact() {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Your message is already send. I will response as soon as
-                      possible
+                      Your message is already sent. I will response as soon as
+                      possible.
                     </p>
                   </div>
 

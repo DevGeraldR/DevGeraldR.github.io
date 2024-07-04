@@ -1,11 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/it-scheduler.png";
-import project2 from "../assets/chatnb.png";
-import project3 from "../assets/booking-web.png";
+import project2 from "../assets/booking-web.png";
+import project3 from "../assets/chatnb.png";
 import project4 from "../assets/trap-game.png";
 import project5 from "../assets/nearby-app.png";
 import project6 from "../assets/nearby-web.png";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -17,22 +18,22 @@ function Projects() {
       name: "IT Scheduler System",
       demoLink: "https://it-scheduler-fcf53.firebaseapp.com/",
       description:
-        "This is an IT scheduler system that we created during our OJT in TaskUS. Login credentials: admin@gmail.com and P@ssw0rd12345!.",
+        "Developed an IT scheduling system using JavaScript to manage employee.",
     },
     {
       img: project2,
+      name: "Booking Website",
+      demoLink: "https://devgeraldr.github.io/booking_website_preview/",
+      description:
+        "A website built in React and Tailwind CSS. It allows users to book dates in a landscape.",
+    },
+    {
+      img: project3,
       name: "ChatNB",
       demoLink:
         "https://drive.google.com/file/d/1W6A-7Jux0UcG7usMBxMWFqGdI1AMesb2/view?usp=sharing",
       description:
-        "An AI Chatbot used  to facilitate conversion with an AI Model Notable Batangueño.",
-    },
-    {
-      img: project3,
-      name: "Booking Website",
-      demoLink: "https://devgeraldr.github.io/booking_website_preview/",
-      description:
-        "A website built in react and tailwind css. It is use for reservation of a time.",
+        "A Chatbot built with ReactJS and NodeJS used to mimic conversation with an AI Model.",
     },
     {
       img: project4,
@@ -40,7 +41,7 @@ function Projects() {
       demoLink:
         "https://drive.google.com/file/d/13zMcKxqpPVTJYyhw6Gm5DUuGuz7p1GFH/view?usp=sharing",
       description:
-        "A game built in c# with Unity. The idea of the game is to avoid traps.",
+        "A game built in C# and Unity. The concept of the game is to avoid traps.",
     },
     {
       img: project5,
@@ -48,14 +49,14 @@ function Projects() {
       demoLink:
         "https://expo.dev/accounts/goodman_22/projects/nearby/builds/03d27f0b-16b7-4285-a86c-762d1d40654c",
       description:
-        "A mobile application in react native. This helps find the nearest location.",
+        "This mobile application helps find the nearest location of a facility.",
     },
     {
       img: project6,
       name: "Nearby Website",
       demoLink: "https://devgeraldr.github.io/nearby-web-preview/",
       description:
-        "A website built in react and tailwind. It is use by admin of Nearby app.",
+        "A website built in React and Tailwind. The admin of the Nearby app uses it.",
     },
   ];
 
