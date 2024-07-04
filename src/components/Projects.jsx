@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import project1 from "../assets/chatnb.png";
 import project2 from "../assets/it-scheduler.png";
 import project3 from "../assets/booking-web.png";
 import project4 from "../assets/trap-game.png";
 import chatnbDemo from "../assets/chatnb-demo.mp4";
+import { Transition, Dialog } from "@headlessui/react";
 
 function Projects() {
   const projects = [
@@ -20,14 +21,6 @@ function Projects() {
       demoLink: "https://devgeraldr.github.io/booking_website_preview/",
       description:
         "A website built with React and Tailwind CSS. It allows users to book dates in a landscape.",
-    },
-    {
-      img: project4,
-      name: "Trap Game",
-      demoLink:
-        "https://drive.google.com/file/d/13zMcKxqpPVTJYyhw6Gm5DUuGuz7p1GFH/view?usp=sharing",
-      description:
-        "A game built with C# and Unity. The concept of the game is to avoid traps.",
     },
   ];
 
@@ -46,6 +39,26 @@ function Projects() {
     setTimeout(() => setShowVideo(false), 300); // Delay to allow transition to finish
     // Re-enable scrolling when video is closed
     document.body.style.overflow = "auto";
+  };
+
+  const [download, setDowload] = useState(false);
+
+  const showDownloadWarning = () => {
+    setDowload(!download);
+  };
+
+  const handleDownload = () => {
+    // Assuming the file is located in the assets folder
+    const fileUrl = process.env.PUBLIC_URL + "/trap-game-installer-1.0.exe";
+
+    // Create a temporary anchor element
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "trap-game-installer-1.0.exe");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setDowload(false);
   };
 
   return (
@@ -122,7 +135,98 @@ function Projects() {
             </div>
           </a>
         ))}
+
+        <button
+          onClick={showDownloadWarning}
+          className="h-fit w-full md:w-[calc(50%-1rem)] lg:w-[calc(50%-1rem)] flex flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-4 mx-2"
+          title="Click to open"
+        >
+          <div className="flex flex-col md:flex-row">
+            <img
+              className="object-cover rounded-t-lg w-full h-64 md:h-[250px] md:w-1/2 md:rounded-none md:rounded-tl-lg md:rounded-bl-lg"
+              src={project4}
+              alt="Trap Game"
+            />
+            <div className="flex flex-col gap-5 p-4 leading-normal w-full md:w-2/3">
+              <h5 className="mb-2 text-2xl text-left tracking-tight text-gray-900 dark:text-white">
+                Trap Game
+              </h5>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-left ">
+                A game built with C# and Unity. The concept of the game is to
+                avoid traps.
+              </p>
+            </div>
+          </div>
+        </button>
       </div>
+      <Transition appear show={download} as={Fragment}>
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={() => {
+            setDowload(false);
+          }}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-medium leading-6 text-gray-900"
+                  >
+                    Trap Game Installer Download
+                  </Dialog.Title>
+                  <div className="mt-2">
+                    <p className="text-sm text-gray-500">
+                      Do you want to download the trap game installer?
+                    </p>
+                  </div>
+
+                  <div className="mt-4 flex gap-2">
+                    <button
+                      type="button"
+                      className="bg-gradient-to-r from-blue-500 to-gray-300 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
+                      onClick={handleDownload}
+                    >
+                      Proceed
+                    </button>
+                    <button
+                      type="button"
+                      className="bg-gradient-to-r from-gray-500 to-gray-300 hover:to-gray-500 text-white px-4 py-2 border-none rounded-md"
+                      onClick={() => {
+                        setDowload(false);
+                      }}
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
     </section>
   );
 }
