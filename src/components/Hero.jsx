@@ -2,7 +2,7 @@ import React from "react";
 import { SiUpwork } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
-import profile from "../assets/profile-hero.jpg";
+import profile from "../assets/profile-hero2.jpg";
 
 function Hero() {
   return (
