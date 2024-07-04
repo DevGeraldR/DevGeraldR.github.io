@@ -1,5 +1,4 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import project1 from "../assets/it-scheduler.png";
 import project2 from "../assets/booking-web.png";
 import project3 from "../assets/chatnb.png";
@@ -7,25 +6,21 @@ import project4 from "../assets/trap-game.png";
 import project5 from "../assets/nearby-app.png";
 import project6 from "../assets/nearby-web.png";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper";
-
 function Projects() {
   const projects = [
     {
       img: project1,
-      name: "IT Scheduler System",
+      name: "IT Scheduler",
       demoLink: "https://it-scheduler-fcf53.firebaseapp.com/",
       description:
-        "Developed an IT scheduling system using JavaScript to manage employee.",
+        "IT scheduling system using JavaScript to manage employees. Use these credentials to log in: admin@gmail.com and P@ssw0rd12345!",
     },
     {
       img: project2,
       name: "Booking Website",
       demoLink: "https://devgeraldr.github.io/booking_website_preview/",
       description:
-        "A website built in React and Tailwind CSS. It allows users to book dates in a landscape.",
+        "A website built with React and Tailwind CSS. It allows users to book dates in a landscape.",
     },
     {
       img: project3,
@@ -33,7 +28,7 @@ function Projects() {
       demoLink:
         "https://drive.google.com/file/d/1W6A-7Jux0UcG7usMBxMWFqGdI1AMesb2/view?usp=sharing",
       description:
-        "A Chatbot built with ReactJS and NodeJS used to mimic conversation with an AI Model.",
+        "An AI Chatbot built with React JS and Node JS to facilitate a conversation with an AI Model, Notable Batangueño.",
     },
     {
       img: project4,
@@ -41,7 +36,7 @@ function Projects() {
       demoLink:
         "https://drive.google.com/file/d/13zMcKxqpPVTJYyhw6Gm5DUuGuz7p1GFH/view?usp=sharing",
       description:
-        "A game built in C# and Unity. The concept of the game is to avoid traps.",
+        "A game built with C# and Unity. The concept of the game is to avoid traps.",
     },
     {
       img: project5,
@@ -49,14 +44,14 @@ function Projects() {
       demoLink:
         "https://expo.dev/accounts/goodman_22/projects/nearby/builds/03d27f0b-16b7-4285-a86c-762d1d40654c",
       description:
-        "This mobile application helps find the nearest location of a facility.",
+        "A mobile application built with React Native to find the nearest location of a facility.",
     },
     {
       img: project6,
       name: "Nearby Website",
       demoLink: "https://devgeraldr.github.io/nearby-web-preview/",
       description:
-        "A website built in React and Tailwind. The admin of the Nearby app uses it.",
+        "A website built with React and Tailwind. The admin of the Nearby app uses it.",
     },
   ];
 
@@ -66,54 +61,31 @@ function Projects() {
         Sample <span className="text-blue-500">Projects</span>
       </h1>
       <br />
-      <div className="flex max-w-6xl mx-auto items-center relative">
-        <Swiper
-          slidesperview={1}
-          spaceBetween={40}
-          breakpoints={{
-            768: {
-              slidesPerView: 3,
-            },
-            640: {
-              slidesPerView: 2,
-            },
-          }}
-          loop={true}
-          autoplay={{
-            delay: 5000,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination, Autoplay]}
-        >
-          {projects.map((project_info, i) => (
-            <SwiperSlide key={i}>
-              <div className="h-fit w-full p-4 bg-slate-700 rounded-xl mb-10">
-                <img
-                  src={project_info.img}
-                  alt=""
-                  className="rounded-lg w-[500px] h-[300px]"
-                />
-                <h3 className="text-xl mt-2 text-blue-500">
+      <div className="flex flex-wrap max-w-6xl mx-auto items-center relative">
+        {projects.map((project_info, i) => (
+          <a
+            key={i}
+            href={project_info.demoLink}
+            className="h-fit w-full md:w-[calc(50%-1rem)] lg:w-[calc(50%-1rem)] flex flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-4 mx-2"
+            title="Click to open"
+          >
+            <div className="flex flex-col md:flex-row">
+              <img
+                className="object-cover rounded-t-lg w-full h-64 md:h-[250px] md:w-1/2 md:rounded-none md:rounded-tl-lg md:rounded-bl-lg"
+                src={project_info.img}
+                alt={project_info.name}
+              />
+              <div className="flex flex-col gap-5 p-4 leading-normal w-full md:w-2/3">
+                <h5 className="mb-2 text-2xl tracking-tight text-gray-900 dark:text-white">
                   {project_info.name}
-                </h3>
-                <p className="mb-4">{project_info.description}</p>
-
-                {project_info.demoLink !== "" ? (
-                  <a
-                    href={project_info.demoLink}
-                    className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
-                  >
-                    Demo
-                  </a>
-                ) : (
-                  ""
-                )}
+                </h5>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  {project_info.description}
+                </p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   );
