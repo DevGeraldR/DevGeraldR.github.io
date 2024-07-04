@@ -14,7 +14,7 @@ function Hero() {
         Software Developer
       </h3>
       <p className="text-md py-5 leading-8 text-gray-300 max-w-xl mx-auto md:text-xl">
-        This website is my e-portfolio. If you are interested <br />
+        This website is my e-portfolio. If you are interested, <br />
         message me below!
       </p>
       <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
