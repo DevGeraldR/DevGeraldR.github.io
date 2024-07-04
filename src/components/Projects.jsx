@@ -3,8 +3,6 @@ import project1 from "../assets/it-scheduler.png";
 import project2 from "../assets/booking-web.png";
 import project3 from "../assets/chatnb.png";
 import project4 from "../assets/trap-game.png";
-import project5 from "../assets/nearby-app.png";
-import project6 from "../assets/nearby-web.png";
 
 function Projects() {
   const projects = [
@@ -37,21 +35,6 @@ function Projects() {
         "https://drive.google.com/file/d/13zMcKxqpPVTJYyhw6Gm5DUuGuz7p1GFH/view?usp=sharing",
       description:
         "A game built with C# and Unity. The concept of the game is to avoid traps.",
-    },
-    {
-      img: project5,
-      name: "Neaby App",
-      demoLink:
-        "https://expo.dev/accounts/goodman_22/projects/nearby/builds/03d27f0b-16b7-4285-a86c-762d1d40654c",
-      description:
-        "A mobile application built with React Native to find the nearest location of a facility.",
-    },
-    {
-      img: project6,
-      name: "Nearby Website",
-      demoLink: "https://devgeraldr.github.io/nearby-web-preview/",
-      description:
-        "A website built with React and Tailwind. The admin of the Nearby app uses it.",
     },
   ];
 
