@@ -13,7 +13,7 @@ function Projects() {
       name: "IT Scheduler",
       demoLink: "https://it-scheduler-fcf53.firebaseapp.com/",
       description:
-        "IT scheduling system using JavaScript to manage employees. Use these credentials to log in: admin@gmail.com and P@ssw0rd12345!",
+        "An IT scheduling system built with JavaScript. Use these credentials to log in: admin@gmail.com and P@ssw0rd12345!",
     },
     {
       img: project2,
