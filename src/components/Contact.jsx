@@ -29,7 +29,7 @@ function Contact() {
   return (
     <>
       <section className="text-white body-font relative" id="contact_us">
-        <div className="container px-10 py-10 mx-auto">
+        <div className="container px-4 py-10 mx-auto">
           <h1 className="text-3xl py-1 text-white text-center">
             Contact <span className="text-blue-500">ME</span>
           </h1>
@@ -91,7 +91,7 @@ function Contact() {
                 {isLoading ? (
                   <button
                     disabled
-                    className="flex items-center bg-blue-500 hover:to-gray-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    className="flex items-center bg-blue-500 hover:to-gray-500 text-white px-4 py-2 border-none rounded-md"
                   >
                     <svg
                       className="w-5 h-5 mr-3 -ml-1 text-blue-900 animate-spin"
@@ -117,7 +117,7 @@ function Contact() {
                   </button>
                 ) : (
                   <button
-                    className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                    className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
                     type="submit"
                   >
                     Send Message
