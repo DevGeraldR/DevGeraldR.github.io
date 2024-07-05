@@ -29,7 +29,7 @@ function Contact() {
   return (
     <>
       <section className="text-white body-font relative" id="contact_us">
-        <div className="container px-5 py-12 mx-auto">
+        <div className="container px-5 py-10 mx-auto">
           <h1 className="text-3xl py-1 text-white text-center">
             Contact <span className="text-blue-500">ME</span>
           </h1>

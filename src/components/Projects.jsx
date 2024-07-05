@@ -63,7 +63,7 @@ function Projects() {
   };
 
   return (
-    <section className="p-10 text-white">
+    <section className="pt-12 pl-10 pr-10 pb-7 text-white">
       <h1 className="text-3xl py-1 text-white text-center">
         Sample <span className="text-blue-500">Projects</span>
       </h1>
