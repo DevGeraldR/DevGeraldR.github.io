@@ -13,11 +13,7 @@ function Hero() {
       <h3 className="text-2xl py-2 text-white md:text-3xl">
         Software Developer
       </h3>
-      <p className="text-md py-5 leading-8 text-gray-300 max-w-xl mx-auto md:text-xl">
-        This website is my e-portfolio. If you are interested, <br />
-        message me below!
-      </p>
-      <div className="text-5xl flex justify-center gap-5 py-3 text-gray-600">
+      <div className="text-4xl flex justify-center gap-5 py-3 text-gray-600">
         <a
           href="https://github.com/DevGeraldR"
           className="cursor-pointer hover:text-blue-500"

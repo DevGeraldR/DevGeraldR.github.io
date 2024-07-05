@@ -69,9 +69,9 @@ function Projects() {
       </h1>
       <br />
       {showVideo && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50 border border-gray-800 shadow">
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-25 z-50">
           <div
-            className={`bg-gray-700 rounded-lg overflow-hidden shadow-xl w-4/5 max-w-4xl p-6 relative transform transition-transform duration-300 pointer-events-auto ${
+            className={`bg-gray-900 rounded-lg overflow-hidden shadow border border-gray-700 w-4/5 max-w-4xl p-6 relative transform transition-transform duration-300 pointer-events-auto ${
               isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
           >
@@ -177,7 +177,7 @@ function Projects() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-gray-800 bg-opacity-25" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -191,15 +191,15 @@ function Projects() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-900 border border-gray-700 shadow p-6 text-left align-middle transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-lg font-medium leading-6 text-white"
                   >
                     Trap Game Installer Download
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-200">
                       Do you want to download the trap game installer?
                     </p>
                   </div>
@@ -207,14 +207,14 @@ function Projects() {
                   <div className="mt-4 flex gap-2">
                     <button
                       type="button"
-                      className="bg-gradient-to-r from-blue-500 to-gray-300 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
+                      className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
                       onClick={handleDownload}
                     >
                       Proceed
                     </button>
                     <button
                       type="button"
-                      className="bg-gradient-to-r from-red-500 to-red-300 hover:to-red-500 text-white px-4 py-2 border-none rounded-md"
+                      className="bg-gradient-to-r from-red-500 hover:to-red-500 text-white px-4 py-2 border-none rounded-md"
                       onClick={() => {
                         setDowload(false);
                       }}

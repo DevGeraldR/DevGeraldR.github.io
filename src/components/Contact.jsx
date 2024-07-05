@@ -52,7 +52,7 @@ function Contact() {
                     onChange={(e) => {
                       setName(e.target.value);
                     }}
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 rounded border border-gray-700 focus:border-blue-500 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -68,7 +68,7 @@ function Contact() {
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
-                    className="w-full bg-gray-100 text-gray-700 rounded border border-gray-300 focus:border-blue-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 border border-gray-700 text-gray-200 rounded focus:border-blue-500 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -83,7 +83,7 @@ function Contact() {
                     onChange={(e) => {
                       setMessage(e.target.value);
                     }}
-                    className="w-full bg-gray-100 rounded border border-gray-300 focus:border-blue-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-800 rounded border border-gray-700 focus:border-blue-500 h-32 text-base outline-none text-gray-200 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   ></textarea>
                 </div>
               </div>
@@ -182,7 +182,7 @@ function Contact() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 bg-gray-800 bg-opacity-25" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
@@ -196,15 +196,15 @@ function Contact() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-900 border border-gray-700 shadow p-6 text-left align-middle transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-medium leading-6 text-gray-900"
+                    className="text-lg font-medium leading-6 text-white"
                   >
                     Message sent
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-200">
                       Your message is already sent. I will response as soon as
                       possible.
                     </p>
@@ -213,7 +213,7 @@ function Contact() {
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="bg-gradient-to-r from-blue-500 to-gray-300 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
+                      className="bg-gradient-to-r from-blue-500 hover:to-blue-500 text-white px-4 py-2 border-none rounded-md"
                       onClick={() => {
                         setName("");
                         setEmail("");
