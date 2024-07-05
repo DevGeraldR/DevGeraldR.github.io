@@ -3,8 +3,8 @@ function Services() {
   return (
     <section className="px-10 pt-20">
       <div className="text-center">
-        <h3 className="text-3xl py-1 text-white ">Skills & Services</h3>
-        <p className="text-md py-1 leading-8 text-gray-200">
+        <h3 className="text-3xl pb-2 pt-1 text-white ">Skills & Services</h3>
+        <p className="text-md leading-8 text-gray-200">
           I offer <span className="text-blue-500"> web</span>,
           <span className="text-blue-500"> mobile</span>, and
           <span className="text-blue-500"> desktop app</span> development

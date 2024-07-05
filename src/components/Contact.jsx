@@ -30,7 +30,7 @@ function Contact() {
     <>
       <section className="text-white body-font relative" id="contact_us">
         <div className="container px-4 py-10 mx-auto">
-          <h1 className="text-3xl py-1 text-white text-center">
+          <h1 className="text-3xl pb-3 pt-1 text-white text-center">
             Contact <span className="text-blue-500">ME</span>
           </h1>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">

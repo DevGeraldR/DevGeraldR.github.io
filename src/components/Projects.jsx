@@ -64,7 +64,7 @@ function Projects() {
 
   return (
     <section className="pt-12 pl-10 pr-10 pb-7 text-white">
-      <h1 className="text-3xl py-1 text-white text-center">
+      <h1 className="text-3xl pb-3 pt-1 text-white text-center">
         Sample <span className="text-blue-500">Projects</span>
       </h1>
       <br />
