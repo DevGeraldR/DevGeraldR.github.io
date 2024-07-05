@@ -29,13 +29,13 @@ function Contact() {
   return (
     <>
       <section className="text-white body-font relative" id="contact_us">
-        <div className="container px-5 py-10 mx-auto">
+        <div className="container px-10 py-10 mx-auto">
           <h1 className="text-3xl py-1 text-white text-center">
             Contact <span className="text-blue-500">ME</span>
           </h1>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <form
-              className="flex flex-wrap -m-2 w-full"
+              className="flex flex-wrap w-full"
               onSubmit={(e) => {
                 e.preventDefault();
                 handleClick();
