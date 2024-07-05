@@ -139,12 +139,6 @@ function Contact() {
               </p>
               <div className="text-3xl flex justify-center gap-5 text-gray-600">
                 <a
-                  href="https://github.com/DevGeraldR"
-                  className="cursor-pointer hover:text-blue-500"
-                >
-                  <BsGithub />
-                </a>
-                <a
                   href="https://www.linkedin.com/in/gerald-romero-732424279/"
                   className="cursor-pointer hover:text-blue-500"
                 >
@@ -155,6 +149,12 @@ function Contact() {
                   className="cursor-pointer hover:text-blue-500"
                 >
                   <SiUpwork />
+                </a>
+                <a
+                  href="https://github.com/DevGeraldR"
+                  className="cursor-pointer hover:text-blue-500"
+                >
+                  <BsGithub />
                 </a>
               </div>
             </div>
@@ -201,12 +201,11 @@ function Contact() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-white"
                   >
-                    Message sent
+                    Thank you
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-200">
-                      Your message is already sent. I will response as soon as
-                      possible.
+                      Your message has been sent!
                     </p>
                   </div>
 

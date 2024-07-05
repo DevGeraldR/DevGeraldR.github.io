@@ -15,12 +15,6 @@ function Hero() {
       </h3>
       <div className="text-4xl flex justify-center gap-5 py-3 text-gray-600">
         <a
-          href="https://github.com/DevGeraldR"
-          className="cursor-pointer hover:text-blue-500"
-        >
-          <BsGithub />
-        </a>
-        <a
           href="https://www.linkedin.com/in/gerald-romero-732424279/"
           className="cursor-pointer hover:text-blue-500"
         >
@@ -31,6 +25,12 @@ function Hero() {
           className="cursor-pointer hover:text-blue-500"
         >
           <SiUpwork />
+        </a>
+        <a
+          href="https://github.com/DevGeraldR"
+          className="cursor-pointer hover:text-blue-500"
+        >
+          <BsGithub />
         </a>
       </div>
       <div className="mx-auto rounded-full w-80 h-80 overflow-hidden mt-5 md:h-96 md:w-96">
