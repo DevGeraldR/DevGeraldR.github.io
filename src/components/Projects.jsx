@@ -69,7 +69,7 @@ function Projects() {
       </h1>
       <br />
       {showVideo && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 z-50 border border-gray-800 shadow">
           <div
             className={`bg-gray-700 rounded-lg overflow-hidden shadow-xl w-4/5 max-w-4xl p-6 relative transform transition-transform duration-300 pointer-events-auto ${
               isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
@@ -77,9 +77,9 @@ function Projects() {
           >
             <button
               onClick={handleClose}
-              className="absolute top-0 right-0 m-1 text-white hover:text-blue-500 text-2xl"
+              className="absolute top-0 right-0 text-white m-1 hover:bg-red-500 text-2xl"
             >
-              <AiOutlineClose size={20} color="white" />
+              <AiOutlineClose size={20} />
             </button>
             <video controls autoPlay className="w-full rounded-lg">
               <source src={chatnbDemo} type="video/mp4" />
@@ -214,7 +214,7 @@ function Projects() {
                     </button>
                     <button
                       type="button"
-                      className="bg-gradient-to-r from-gray-500 to-gray-300 hover:to-gray-500 text-white px-4 py-2 border-none rounded-md"
+                      className="bg-gradient-to-r from-red-500 to-red-300 hover:to-red-500 text-white px-4 py-2 border-none rounded-md"
                       onClick={() => {
                         setDowload(false);
                       }}
