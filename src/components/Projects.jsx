@@ -5,6 +5,7 @@ import project3 from "../assets/booking-web.png";
 import project4 from "../assets/trap-game.png";
 import chatnbDemo from "../assets/chatnb-demo.mp4";
 import { Transition, Dialog } from "@headlessui/react";
+import { AiOutlineClose } from "react-icons/ai";
 
 function Projects() {
   const projects = [
@@ -76,9 +77,9 @@ function Projects() {
           >
             <button
               onClick={handleClose}
-              className="absolute top-0 right-0 mr-2 text-white hover:text-blue-500 text-2xl"
+              className="absolute top-0 right-0 m-1 text-white hover:text-blue-500 text-2xl"
             >
-              x
+              <AiOutlineClose size={20} color="white" />
             </button>
             <video controls autoPlay className="w-full rounded-lg">
               <source src={chatnbDemo} type="video/mp4" />
