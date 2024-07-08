@@ -64,7 +64,7 @@ function Projects() {
 
   return (
     <section className="pt-12 pl-10 pr-10 pb-7 text-white">
-      <h1 className="text-3xl pb-3 pt-1 text-white text-center">
+      <h1 className="text-3xl pb-4 pt-1 text-white text-center">
         Sample <span className="text-blue-500">Projects</span>
       </h1>
       <br />
@@ -153,8 +153,8 @@ function Projects() {
                 Trap Game
               </h5>
               <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-left ">
-                A game built with C# and Unity. The concept of the game is to
-                avoid traps.
+                A simple game built with C# and Unity. The concept of the game
+                is to avoid traps.
               </p>
             </div>
           </div>

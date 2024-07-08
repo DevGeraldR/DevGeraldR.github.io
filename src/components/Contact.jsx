@@ -30,7 +30,7 @@ function Contact() {
     <>
       <section className="text-white body-font relative" id="contact_us">
         <div className="container px-4 py-10 mx-auto">
-          <h1 className="text-3xl pb-3 pt-1 text-white text-center">
+          <h1 className="text-3xl pb-4 pt-1 text-white text-center">
             Contact <span className="text-blue-500">ME</span>
           </h1>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -132,12 +132,7 @@ function Contact() {
               >
                 devgeraldromero@gmail.com
               </a>
-              <p className="leading-normal my-5">
-                Batangas City,
-                <br />
-                Batangas, Philippines
-              </p>
-              <div className="text-3xl flex justify-center gap-5 text-gray-600">
+              <div className="text-3xl flex justify-center gap-5 text-gray-600 mt-5">
                 <a
                   href="https://www.linkedin.com/in/gerald-romero-732424279/"
                   className="cursor-pointer hover:text-blue-500"
