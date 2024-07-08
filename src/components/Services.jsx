@@ -3,7 +3,7 @@ function Services() {
   return (
     <section className="px-10 pt-20">
       <div className="text-center">
-        <h3 className="text-3xl pb-2 pt-1 text-white ">
+        <h3 className="text-3xl pt-1 text-white ">
           {" "}
           My <span className="text-blue-500">Skills</span>
         </h3>
